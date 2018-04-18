@@ -39,3 +39,69 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+/** L3: font  **/
+p {
+  /**
+  color: 文字顏色
+  可使用
+  1. 關鍵字：pink, purple, red ......
+  2. 色碼：#c8c8c8, #ffffff .......
+  3. rgb：rgb(50, 50, 50)
+  4. rgba：rbga(50, 50, 50, 0.5);
+  5. 其他不常見的：hsl, hsla
+  
+  ps. 在 css 中，0.5 可以簡寫為 .5
+  
+  https://developer.mozilla.org/en-US/docs/Web/CSS/color
+  */
+  /**
+   font-family: 字體
+   以逗號分隔,有兩個字以上要以單引號或雙引號包起來
+   可使用
+   1. 字體名稱
+   2. 字體檔名
+   3. 字體種類：serif, sans-serif
+   4. 系統預設：system-ui
+   
+   https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
+  */
+  font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif;
+  
+  /**
+  font-size: 字體大小
+  定義是大寫 M 頂端到底端的長度
+  數值可以是
+  1. 絕對數值：18px
+  2. 相對父層數值：1.5em, 150%
+  3. 相對根層數值：1.5rem
+  */
+  font-size: 18px;
+  
+  /**
+  font-weight: 字重
+  數值可以是
+  1. 數值：100 200 300 ... 900
+  2. 關鍵字：lighter, normal, bold, bolder
+  */
+  font-weight: bold;
+  
+  /**
+  font-style: 字體樣式
+  可以是：
+  1. normal;
+  2. italic;
+  
+  https://developer.mozilla.org/en-US/docs/Web/CSS/font-style
+  */
+  font-style: italic;
+  
+  /**
+  line-height：行高
+  每一行的高度
+  可以是
+  1. 數值：18px, 3em
+  2. 相對值： 150%, 1.5
+  */
+  line-height: 1.5;
+}
