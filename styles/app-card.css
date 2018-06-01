@@ -1,0 +1,114 @@
+* {
+  font-family: "Ruda";
+  position: relative;
+  vertical-align: top;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: #dddddd;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 40px;
+}
+
+.content {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: inline-block;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); */
+  background-color: white;
+  width: 260px;
+  /* border: 1px #dddddd solid; */
+  margin: 24px 4px 24px 4px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 20px -12px rgba(0,0,0,0.4);
+  transition: 0.5s;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 20px -8px rgba(0,0,0,0.6);
+  opacity: 0.8;
+}
+
+.card .image img {
+  width: 100%;
+  height: 172px;
+  border-radius: 4px 4px 0px 0px;
+  background-size: cover;
+  transition: all 0.4s;
+}
+
+.card .image img:hover{
+  transform: scale(1.05,1.05);
+}
+
+.card .iframe iframe{
+  border-radius: 4px 4px 0px 0px;
+  transition: all 0.4s;
+}
+
+.card .image iframe:hover{
+  transform: scale(1.05,1.05);
+}
+
+.card .info {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: 0.4px;
+  color: black;
+  padding: 10px 12px 14px 12px
+}
+
+.card .info .location {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.card .info .date {
+  font-weight: 900;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  letter-spacing: 1px;
+  color: #e60000;
+}
+
+.card .info .line {
+  border: solid 0.5px #dcdcdc;
+}
+
+.card .info .discription {
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 6px;
+  color: rgba(0,0,0,0.8)
+}
